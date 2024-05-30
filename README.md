@@ -8,6 +8,8 @@ This repository is following me along the bootcamp, as I complete lessons and ex
 
 I will make a Large Projects Folder, so they're much more clear and accessible.
 
+Starts from 2.1
+
 The course is "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=LEADERSALE24B". Cannot recommend enough, and I've only just began.
 
 - Cory.
