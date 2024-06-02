@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+}
+.header{
+    color: white;
+    background-color: rgb(29, 29, 29);
+}
+
+.text-white{
+    color: white;
+    opacity: 0.8;
+}
+.text-black{
+    color: black;
+}
+
+
+
+
+.box1{
+height: 100vh;
+padding-top: 10%;
+}
+.part1{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.logoIMG{
+ width: 30%;
+}
+.active-purple{
+    background-color: #520069;
+    border-radius: 5px;
+    color: white;
+}
+.unactive-purple{
+    border-radius: 5px;
+    background-color: #272727;
+    color: white;
+}
+.purple-bottom-border{
+    border-bottom: #520069 8px solid;
+    border-radius: 50%;
+    padding-left: 25%;
+}
+.custom-cards{
+    background-color: #272727;
+    height: 105vh;
+    padding: 15%;
+    color: black;
+}
+
+
+
+
+.album{
+height: 105vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(29, 29, 29);
+margin-bottom: 200px;
+}
+
+
+.about-me{
+    height: 105vh;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.marketing{
+    height: 105vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marketing-box{
+    background-color: black;
+    margin: 0;
+}
+.contact-me-box{
+    color: white;
+    text-align: center;
+    background-color: #272727;
+    border-bottom: 5px solid rgb(29, 29, 29);
+    border-top: 5px solid rgb(29, 29, 29);
+    border-left: 5px solid rgb(29, 29, 29);
+    border-right: 5px solid rgb(29, 29, 29);
+    padding-bottom: 16px;
+}
+.Contact-Me-Head{
+    color: white;
+    padding-left: 25%;
+    padding-bottom: 15px;
+    padding-top: 16px;
+    border-bottom: 5px solid rgb(29, 29, 29);
+    border-top: 5px solid rgb(29, 29, 29);
+    border-left: 5px solid rgb(29, 29, 29);
+    border-right: 5px solid rgb(29, 29, 29);
+    background-color: #272727;
+}
+
+.About-Me-Buttons{
+    background-color: #520069;
+}
+.left-about{
+    border-left: #520069 5px solid;
+}
