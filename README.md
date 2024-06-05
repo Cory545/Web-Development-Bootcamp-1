@@ -6,7 +6,7 @@ I decided to take this course (it was a no-brainer, it's a brilliant course) to 
 
 This repository is following me along the bootcamp, as I complete lessons and excercises. You can track as I improve with each lesson, getting gradually more advanced.
 
-I will make a Large Projects Folder, so they're much more clear and accessible.
+Once I have completed the course, I will be making another repository specifically for the Projects to be seperate.
 
 Starts from 2.1
 
