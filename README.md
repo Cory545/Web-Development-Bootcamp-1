@@ -8,7 +8,7 @@ This repository is following me along the bootcamp, as I complete lessons and ex
 
 Once I have completed the course, I will be making another repository specifically for the Projects to be seperate.
 
-Starts from 2.1
+ Starts from 2.1
 
 The course is "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=LEADERSALE24B". Cannot recommend enough, and I've only just began.
 
