@@ -10,6 +10,8 @@ Once I have completed the course, I will be making another repository specifical
 
  Starts from 2.1
 
+ 11-14 : Mostly studying beginner JavaScript, and doing minor excercises that are not worth uploading as they're only few lines of code.
+
 The course is "https://www.udemy.com/course/the-complete-web-development-bootcamp/?couponCode=LEADERSALE24B". Cannot recommend enough, and I've only just began.
 
 - Cory.
