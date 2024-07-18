@@ -1,0 +1,12 @@
+#formContainer {
+    display: none;
+    border: 3px solid #14A2BE;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 20px;
+    flex-direction: column;
+    color: #14A2BE;
+}

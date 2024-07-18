@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+    <%# Header %>
+    <header class="p-3 custom-navbar">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2" style="color: #14A2BE;">Home</a></li>
+                    <li><a href="#" class="nav-link px-2" style="color: #14A2BE;">Create Blog Post</a></li>
+                    <li><a href="#" class="nav-link px-2" style="color: #14A2BE;">Current Blog Posts</a></li>
+                    <li><a href="#" class="nav-link px-2" style="color: #14A2BE;">Footer</a></li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." style="border-color: #14A2BE;" aria-label="Search">
+                </form>
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-info me-2">Login</button>
+                    <button type="button" class="btn btn-outline-info">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <%# Landing Page %>
+    <div class="px-4 py-5 text-center landing-page" style="height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <img src="/images/do-something-great-neon-glow-inspirational-quotes-black-2048x2048-2230.jpg" height="400px" alt="">
+        <h1 class="p-3 title" style="font-family: 'Biryani', sans-serif;font-weight: 800; color: #14A2BE;">
+            Blog Website
+        </h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4" style="color: #14A2BE;">Literally a website for you to make a little blog post, and it'll show below this section. :)</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" id="createButton" class="btn btn-outline-info" style="padding: 10px;">Create Your Own Blog Post</button>
+            </div>
+        </div>
+        <div id="formContainer" style="border: 3px solid #14A2BE; width: 25%; display: none; align-items: center; justify-content: center; margin: 40px;">
+            <form action="/submit" method="POST" style="display: flex; justify-content: center; align-items: center; flex-direction: column; color: #14A2BE; padding-top: 5px;">
+                <label for="title">Title</label>
+                <input type="text" name="title" placeholder="Title" required>
+                <label for="description">Description</label>
+                <input type="text" name="description" placeholder="Description" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <%# Cards %>
+    <div class="album py-5" style="background-color: rgb(0, 0, 0);">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <% posts.forEach((post, index) => { %>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: rgb(31, 31, 31); color: #14A2BE; padding: 20px; margin: 40px;">
+                            <div>
+                                <h3><%= post.title %></h3>
+                                <p><%= post.content %></p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm delete-button" style="border: 1px solid #860000; color: #860000;"data-index="<%= index %>">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+
+    <%# Footer %>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #14A2BE;">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #14A2BE;">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #14A2BE;">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #14A2BE;">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #14A2BE;">About</a></li>
+            </ul>
+            <p class="text-center " style="color: #14A2BE;">© 2024 Company, Inc</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/script.js"></script>
+</body>
+</html>
